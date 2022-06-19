@@ -1,6 +1,6 @@
 
-import  firebase from "firebase"
-import "firebase/firestore"
+import  firebase from "firebase/compat/app"
+import "firebase/compat/database"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,5 +15,7 @@ const firebaseConfig = {
   appId: "1:735707021056:web:b47cef9e080b74273cfde5"
 };
 // Initialize Firebase
-firebase.InitializeApp(firebaseConfig);
+
+firebase.initializeApp(firebaseConfig);
+export const dataref=firebase.database();
 export default firebase;

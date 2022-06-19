@@ -1,11 +1,14 @@
 
 import './App.css';
 import Register from './component/Register';
+import showdata from './component/showdata';
 
 function App() {
  
   return (
-    <Register/>
+    
+    <showdata/>
+    
   );
 }
 
