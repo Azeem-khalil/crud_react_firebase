@@ -1,13 +1,28 @@
 
 import './App.css';
+import AddEdite from './component/AddEdite';
+import Edite from './component/Edite';
+import Header from './component/Header';
+import Mainpage from './component/Mainpage';
 import Register from './component/Register';
-import showdata from './component/showdata';
+import { Routes, Route, Link } from "react-router-dom";
+import ListRecord from './component/index ';
 
 function App() {
  
   return (
+    <div className='App'>
+      <Header/>
+<Routes>
+<Route path="/" element={<ListRecord/>}></Route>
+
+    <Route path="/add" element={<AddEdite/>} ></Route>
+    <Route path="/update/:id" element={<AddEdite/>} ></Route>
+
+</Routes>
+
+    </div>
     
-    <showdata/>
     
   );
 }

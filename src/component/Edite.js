@@ -3,7 +3,7 @@ import React, {useState,setState} from 'react';
 import firebase, { dataref } from './Firebase';
 import './style.css'
 
-function Register() {
+function Edite() {
 
     const [USER, setUSER]=useState({
         firstName: "",
@@ -96,4 +96,4 @@ function Register() {
     )       
 }
 
-export default Register
+export default Edite
