@@ -3,7 +3,6 @@ import './App.css';
 import AddEdite from './component/AddEdite';
 import Edite from './component/Edite';
 import Header from './component/Header';
-import Mainpage from './component/Mainpage';
 import Register from './component/Register';
 import { Routes, Route, Link } from "react-router-dom";
 import ListRecord from './component/index ';
