@@ -80,7 +80,8 @@ function ListRecord () {
                 <td>{data[id].firstname}</td>
                 <td>{data[id].lastname}</td>
                 <td>{data[id].email}</td>
-               <td> <Link to={'/update/'+id}>
+               <td> 
+                <Link to={'/update/'+id}>
                 <a class="btn btn-primary" href="#" role="button">update</a>
             </Link> </td><td>
             <a class="btn btn-primary" href="#" onClick={()=>onDelete(id)} role="button">delete</a>
