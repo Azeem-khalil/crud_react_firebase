@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import {initial, isEmpty} from "lodash"
 import firebase, { dataref } from './Firebase';
 import { getDatabase, ref, onValue, push} from "firebase/database";
-import {useNavigate,useParams } from "react-router-dom"
+import {useNavigate,useParams,Link } from "react-router-dom"
 function AddEdite() {
 
     
@@ -140,8 +140,11 @@ const handleSubmit=(event)=>{
             onChange={handleinputChange} />
         
         </div>
-<button className='btn bnt-default'>Cancel</button>
-<button className='btn bnt-success btn-raised' type='submit'>Submit</button>
+        <Link to={'/'}>
+<button className='btn btn-secondary btn-sm mr-1 '>Cancel</button>
+            </Link> 
+
+<button className='mr-1 btn btn-primary btn-sm' type='submit'>Submit</button>
 
     </form>
     
